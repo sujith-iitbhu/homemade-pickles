@@ -7,92 +7,88 @@ body {
     color: #333;
 }
 
+/* Header Styles */
 header {
-    background-color: #8bc34a;
-    color: white;
-    padding: 20px;
-    text-align: center;
+    background-color: #4CAF50;
+    padding: 15px 0;
 }
 
-header h1 {
-    margin: 0;
-    font-size: 2.5em;
-}
-
-main {
-    padding: 20px;
-}
-
-h2 {
-    color: #8bc34a;
-    font-size: 1.8em;
-}
-
-/* Pickles Section */
-.product-container {
+header nav ul {
+    list-style-type: none;
     display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: space-around;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
 }
 
-.product-card {
-    background-color: white;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    width: 250px;
-    padding: 15px;
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Home Section */
+#home {
     text-align: center;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s;
+    padding: 50px;
+    background-color: #8BC34A;
+    color: white;
 }
 
-.product-card:hover {
-    transform: scale(1.05);
+#home h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
 }
 
-.product-card img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
+/* About Us Section */
+#about {
+    padding: 50px;
+    background-color: white;
+    text-align: center;
 }
 
-.product-card h3 {
-    color: #8bc34a;
-    margin-bottom: 10px;
+#about h2 {
+    color: #4CAF50;
+    font-size: 2em;
 }
 
-/* Veg Section Styling */
-#veg-pickles h2 {
-    color: #4CAF50; /* Green color to symbolize veg */
+/* Contact Us Section */
+#contact {
+    padding: 50px;
+    background-color: #f2f2f2;
+    text-align: center;
 }
 
-#veg-pickles .product-card {
-    border: 2px solid #4CAF50; /* Green border for veg items */
+#contact h2 {
+    color: #4CAF50;
+    font-size: 2em;
 }
 
-/* Non-Veg Section Styling */
-#nonveg-pickles h2 {
-    color: #d32f2f; /* Red color to symbolize non-veg */
-}
-
-#nonveg-pickles .product-card {
-    border: 2px solid #d32f2f; /* Red border for non-veg items */
-}
-
-/* Contact Section */
 #contact a {
-    color: #8bc34a;
+    color: #4CAF50;
     text-decoration: none;
 }
 
+#contact a:hover {
+    text-decoration: underline;
+}
+
+/* Footer Styles */
 footer {
     background-color: #333;
     color: white;
     text-align: center;
-    padding: 10px 0;
+    padding: 15px 0;
 }
 
-a:hover {
-    text-decoration: underline;
+footer p {
+    margin: 0;
 }
