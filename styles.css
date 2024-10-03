@@ -23,17 +23,67 @@ main {
     padding: 20px;
 }
 
-section {
-    margin-bottom: 30px;
-}
-
 h2 {
     color: #8bc34a;
+    font-size: 1.8em;
 }
 
-ul {
-    list-style-type: disc;
-    padding-left: 20px;
+/* Pickles Section */
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-around;
+}
+
+.product-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 250px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+}
+
+.product-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.product-card h3 {
+    color: #8bc34a;
+    margin-bottom: 10px;
+}
+
+/* Veg Section Styling */
+#veg-pickles h2 {
+    color: #4CAF50; /* Green color to symbolize veg */
+}
+
+#veg-pickles .product-card {
+    border: 2px solid #4CAF50; /* Green border for veg items */
+}
+
+/* Non-Veg Section Styling */
+#nonveg-pickles h2 {
+    color: #d32f2f; /* Red color to symbolize non-veg */
+}
+
+#nonveg-pickles .product-card {
+    border: 2px solid #d32f2f; /* Red border for non-veg items */
+}
+
+/* Contact Section */
+#contact a {
+    color: #8bc34a;
+    text-decoration: none;
 }
 
 footer {
@@ -43,7 +93,6 @@ footer {
     padding: 10px 0;
 }
 
-a {
-    color: #8bc34a;
-    text-decoration: none;
+a:hover {
+    text-decoration: underline;
 }
