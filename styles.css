@@ -1,94 +1,64 @@
-/* General Styles */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f2f2f2;
-    color: #333;
-}
+/* Custom Styles */
 
-/* Header Styles */
-header {
-    background-color: #4CAF50;
-    padding: 15px 0;
-}
-
-header nav ul {
-    list-style-type: none;
-    display: flex;
-    justify-content: center;
-    margin: 0;
-    padding: 0;
-}
-
-header nav ul li {
-    margin: 0 15px;
-}
-
-header nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 1.2em;
-}
-
-header nav ul li a:hover {
-    text-decoration: underline;
-}
-
-/* Home Section */
+/* Override Bootstrap's Jumbotron Background */
 #home {
-    text-align: center;
-    padding: 50px;
-    background-color: #8BC34A;
+    background-image: url('images/pickle-banner-bg.jpg'); /* Optional: Add a background image */
+    background-size: cover;
+    background-position: center;
     color: white;
+    position: relative;
 }
 
-#home h1 {
-    font-size: 3em;
+#home::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 128, 0, 0.6); /* Semi-transparent overlay */
+    z-index: 1;
+}
+
+#home .container {
+    position: relative;
+    z-index: 2;
+}
+
+#about img {
     margin-bottom: 20px;
 }
 
-/* About Us Section */
-#about {
-    padding: 50px;
-    background-color: white;
-    text-align: center;
+/* Contact Form */
+#contact form {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
 }
 
-#about h2 {
-    color: #4CAF50;
-    font-size: 2em;
+#contact form .btn-success {
+    background-color: #388e3c;
+    border: none;
 }
 
-/* Contact Us Section */
-#contact {
-    padding: 50px;
-    background-color: #f2f2f2;
-    text-align: center;
+#contact form .btn-success:hover {
+    background-color: #2e7d32;
 }
 
-#contact h2 {
-    color: #4CAF50;
-    font-size: 2em;
-}
-
-#contact a {
-    color: #4CAF50;
-    text-decoration: none;
-}
-
-#contact a:hover {
-    text-decoration: underline;
-}
-
-/* Footer Styles */
+/* Footer */
 footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 15px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
 }
 
-footer p {
-    margin: 0;
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    #home h1 {
+        font-size: 2.5rem;
+    }
+    
+    #home p {
+        font-size: 1.2rem;
+    }
 }
